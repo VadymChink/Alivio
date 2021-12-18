@@ -166,7 +166,7 @@ body {
 .container1 {
   display: block;
   height: 895px;
-  background: url(/img/container1.png);
+  background: url(..//img/container1.png);
 
   position: relative;
 }
