@@ -82,6 +82,12 @@ h6 {
   min-width: 100%;
   overflow: hidden;
 }
+@media (max-width: 1040px) {
+  .wrapper {
+    min-width: 100%;
+    overflow: scroll;
+  }
+}
 ._container {
   width: 1920px;
   margin: 0 auto;
