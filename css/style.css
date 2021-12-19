@@ -78,22 +78,31 @@ h6 {
   font-weight: 400;
 }
 /*-------End Zeroing-------------*/
+.wrapper {
+  min-width: 100%;
+  overflow: hidden;
+}
+._container {
+  width: 1920px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
 body {
   font-family: "Lato", sans-serif "Noto Sans Georgian", sans-serif;
-  width: 1920px;
+  /* width: 1920px; */
   height: 5173px;
   margin: 0 auto;
   background: rgba(255, 255, 255, 1);
-  border: 1px solid #000000;
 }
+
 .header {
   height: 85px;
   display: flex;
   align-items: center;
 }
 .logo {
-  margin-left: 275px;
+  margin-left: 85px;
   width: 81px;
 }
 .navigator {
@@ -123,7 +132,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   width: 277px;
   height: 51px;
 }
@@ -138,7 +146,7 @@ body {
 .Sign_in a:hover {
   color: #ffffff;
   background: #01996d;
-  padding: 15px 15px;
+  padding: 15px 10px;
   border-radius: 4px;
 }
 .Start_Trial input {
@@ -163,18 +171,16 @@ body {
 }
 /* container1 */
 .container1 {
-  display: block;
+  display: flex;
+  justify-content: start;
+  align-items: center;
   height: 895px;
-  background: url(..//img/container1.png);
-
-  position: relative;
+  background: url(..//img/container1.png) no-repeat;
 }
 .block1 {
-  position: absolute;
+  margin-left: 70px;
   width: 440px;
   height: 384px;
-  left: 275px;
-  top: 261px;
 }
 .heading {
   display: block;
@@ -218,13 +224,13 @@ body {
   color: #484848;
 }
 
-/* container2 */
+/* container2 -----------------------------------------------------------------*/
 .container2 {
   display: block;
   width: 1413px;
   height: 1386px;
   position: relative;
-  margin: 170px 275px;
+  margin: 170px auto;
 }
 .block21 {
   width: 1413px;
@@ -236,9 +242,10 @@ body {
   height: 937px;
   top: 245px;
 }
-.flexcontainer {
+.flex_container {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  flex-wrap: wrap;
 }
 .heading2 {
   width: 584px;
@@ -250,7 +257,7 @@ body {
   line-height: 157%;
   color: #01996d;
 }
-.upTytle {
+.upTitle {
   font-family: Lato;
   font-style: normal;
   font-weight: 600;
@@ -259,7 +266,7 @@ body {
   color: #424242;
 }
 .rightText {
-  width: 671px;
+  width: 670px;
   height: 269px;
   font-family: Lato;
   font-style: normal;
@@ -310,18 +317,19 @@ span {
   top: 130px;
 }
 
-/* container2 */
+/* container3------------------------------------------------------ */
 
 .container3 {
   height: 922px;
   background: #245852;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .blockText {
   width: 580px;
   height: 350px;
+  margin-left: 25px;
 }
 .blockTextP1 {
   font-family: Georgia;
@@ -338,7 +346,7 @@ span {
   font-size: 25px;
   line-height: 157%;
   color: #ffffff;
-  margin: 35px 0 65px 0;
+  margin: 35px 0 35px 0;
 }
 .blockVideo {
   margin-left: 50px;
@@ -444,7 +452,7 @@ li {
   flex-direction: column;
 }
 .footerLogo {
-  margin: 95px 10px 60px 265px;
+  margin: 95px 10px 60px 70px;
 }
 .footerLogo a {
   font-family: Avenir;
@@ -464,5 +472,5 @@ li {
   line-height: 30px;
   color: #ffffff;
   margin-bottom: 60px;
-  margin-left: 265px;
+  margin-left: 70px;
 }
